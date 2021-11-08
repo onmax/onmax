@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Max</h1>
-<h3 align="center">A full stack frontend developer from Spain</h3>
+<h3 align="center">A full stack frontend developer from Spain living in Germany</h3>
 
 - 🔭 I’m currently working on **Blockchain**
 
