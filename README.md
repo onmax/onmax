@@ -2,6 +2,8 @@
 <h3 align="center">A full stack frontend developer from Spain living in Germany</h3>
 
 - 🔭 I’m currently working on **Blockchain**
+- 🔎 Working with WebComponents && multiple frameworks
+- 💭 Interested in AI, SSI and more...
 
 
 <h3 align="left">Languages and Tools:</h3>
