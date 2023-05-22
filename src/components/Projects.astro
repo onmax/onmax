@@ -1,0 +1,203 @@
+---
+import { Icon } from 'astro-icon'
+
+const projects = {
+  'Current Focus': [
+    {
+      title: 'Alba',
+      description: 'A TypeScript client for the Albatros RPC API.',
+      link: 'https://github.com/onmax/albatross-rpc-client-ts',
+      icon: 'albatross-rpc-ts',
+      size: '36px',
+    },
+    {
+      title: 'VTS',
+      description: 'Validator Trust Score Service for Albatross.',
+      link: 'https://github.com/onmax/nimiq-validator-trust-score',
+      icon: 'vts',
+      size: '36px',
+    },
+  ],
+  'Nimiq Frontend': [
+    {
+      title: 'Nimiq Website',
+      description: 'Homepage of Nimiq.',
+      link: 'https://nimiq.com',
+      icon: 'nimiq',
+      size: '32px',
+    },
+    {
+      title: 'S3 Referrals',
+      description: 'S3 Widget & Referral Dashboard',
+      link: 'https://referrals.supersimpleswap.com',
+      icon: 's3-referrals',
+      size: '28px',
+    },
+    {
+      title: 'Crypto Map',
+      description: 'A world-wide map to see where to spend your Crypto.',
+      link: 'https://map.nimiq.com',
+      icon: 'crypto-map',
+      size: '32px',
+    },
+    {
+      title: 'USDC Wallet',
+      description: 'USDC integration in to Nimiq Wallet.',
+      link: 'https://wallet.nimiq.com',
+      icon: 'usdc-on-nimiq',
+      size: '28px',
+    },
+    {
+      title: 'Nimiq TailwindCSS',
+      description: 'A custom Tailwind CSS config with Nimiq styles.',
+      link: 'https://onmax.github.io/tailwindcss-nimiq/',
+      icon: 'nimiq-tailwindcss',
+      size: '32px',
+    },
+    {
+      title: 'Nimiq Icons',
+      description: 'A collection of Nimiq icons.',
+      link: 'https://onmax.github.io/nimiq-icons/',
+      icon: 'nimiq-icons',
+      size: '32px',
+    },
+  ],
+  'Nimiq Ecosystem': [
+    {
+      title: 'Crypto Map Backend',
+      description: 'A dashboard to manage the Crypto Map.',
+      link: 'https://github.com/nimiq/establishments-map-backend',
+      icon: 'crypto-map',
+      size: '32px',
+    },
+    {
+      title: 'S3 Referrals',
+      description: 'S3 Widget & Referral Dashboard',
+      link: 'https://referrals.supersimpleswap.com',
+      icon: 's3-referrals',
+      size: '28px',
+    },
+    {
+      title: 'Nimiq Sources',
+      description: 'Script to fetch some stats about Nimiq',
+      link: 'https://github.com/nimiq/nimiq.com-sources',
+      icon: 'nimiq-sources',
+      size: '32px',
+    },
+  ],
+  Alastria: [
+    {
+      title: 'Go Alastria',
+      description: 'Unofficial implementation of the Alastria specification',
+      link: 'https://github.com/onmax/go-alastria',
+      icon: 'go-alastria',
+      size: '32px',
+    },
+    {
+      title: 'Open API Graph',
+      description: 'A TS library to manage large API projects defined by OpenAPIv3.',
+      link: 'https://github.com/onmax/openAPI-graph-core',
+      icon: 'open-api-graph',
+      size: '32px',
+    },
+  ],
+  Plugins: [
+    {
+      title: 'Astro Single File',
+      description: 'Build you Astro HTML & CSS in a single file.',
+      link: 'https://www.npmjs.com/package/astro-single-file',
+      icon: 'astro-single-file',
+      size: '28px',
+    },
+    {
+      title: 'TailwindCSS Labeled Groups',
+      description: 'Create multiple groups utilities and all variations.',
+      link: 'https://github.com/onmax/tailwindcss-labeled-groups',
+      icon: 'logos:tailwindcss-icon',
+      size: '28px',
+    },
+    {
+      title: 'TailwindCSS Variables',
+      description: 'Write CSS variables using only classes',
+      link: 'https://github.com/onmax/tailwindcss-write-variables',
+      icon: 'logos:tailwindcss-icon',
+      size: '28px',
+    },
+  ],
+  Automations: [
+    {
+      title: 'Joxi',
+      description: 'Automatic personal finance tracker.',
+      link: 'https://github.com/onmax/joxi',
+      icon: 'joxi',
+      size: '28px',
+    },
+    {
+      title: 'Happy Tweet',
+      description: 'A tool that fetches happy tweets given a search term.',
+      link: 'https://github.com/onmax/happy-tweet',
+      icon: 'twemoji:slightly-smiling-face',
+      size: '26px',
+    },
+  ],
+} as const
+---
+
+<div class="flex relative">
+  <div class="mr-4 whitespace-nowrap py-4">
+    <h2 class="sticky top-[calc(50%-12px)] font-bold w-32 text-right text-lg">My projects</h2>
+  </div>
+  <ul class="mr-8 pt-32 w-full" id="projects">
+    {
+      Object.keys(projects).map((project) => (
+        <li class="min-h-[10rem] flex gap-x-12 py-12 relative">
+          <h3 class="sticky top-[calc(50%-12px)] h-max w-40 whitespace-nowrap text-lg">{project}</h3>
+          <ul class="sticky top-[calc(50%-12px)] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-8 flex-1 h-max">
+            {projects[project as keyof typeof projects].map(({ title, description, link, icon, size }) => (
+              <li class="group -mt-1.5" data-project>
+                <a
+                  href={link}
+                  target="_blank"
+                  class="rounded-lg group-hover:bg-primary group-focus-visible:bg-primary duration-200 transition-colors relative flex items-center px-2 py-1.5"
+                  title={title}
+                >
+                  <div class="pt-1 pr-5">
+                    <Icon
+                      data-icon
+                      name={icon}
+                      style={`width: ${size}`}
+                      class="w-12 opacity-50 saturate-0 group-hover:opacity-100 group-focus-visible:opacity-100 group-hover:saturate-100 group-focus-visible:saturate-100 transition-all duration-300 group-hover:delay-100"
+                    />
+                  </div>
+                  <div class="flex-auto">
+                    <h4 class="opacity-80 group-hover:opacity-90 group-focus-visible:opacity-90 transition-opacity ">{title}</h4>
+                    <p class="text-sm opacity-60 group-hover:opacity-70 group-focus-visible:opacity-70 transition-opacity  font-normal">{description}</p>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  const projects = document.getElementById('projects')!
+
+  // When the [data-project] is in the middle
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const icon = entry.target.querySelector('[data-icon]')!
+        icon.classList.toggle('opacity-50', !entry.isIntersecting)
+        icon.classList.toggle('saturate-0', !entry.isIntersecting)
+      })
+    },
+    { rootMargin: '-48% 0px -48% 0px' }
+  )
+
+  projects.querySelectorAll('[data-project]').forEach((project) => observer.observe(project))
+</script>

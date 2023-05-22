@@ -1,0 +1,89 @@
+---
+import { Icon } from 'astro-icon'
+
+const skills = {
+  'Code Fluency': [
+    ['Typescript', 'typescript-icon'],
+    ['JS/Node', 'javascript'],
+    ['Tailwind', 'tailwindcss-icon', '28px'],
+    ['Python', 'python'],
+    ['Bash', 'bash-icon'],
+    ['GitHub Actions', 'github-actions'],
+  ],
+  'Framework focus': [
+    ['Vue/Nuxt', 'vue'],
+    ['Angular', 'angular-icon'],
+    ['Svelte', 'svelte-icon'],
+    ['Astro', 'filename:astro'],
+    ['Django', 'django-icon'],
+    ['Spring', 'spring-icon'],
+    ['Laravel', 'laravel'],
+  ],
+  'On the Horizon': [
+    ['Rust', 'rust'],
+    ['Git', 'git-icon'],
+    ['PHP', 'php', '28px'],
+    ['AGI', 'filename:agi'],
+    ['Haskell', 'haskell-icon'],
+  ],
+  'Design Savvy': [
+    ['Figma', 'figma', '12px'],
+    ['Adobe XD', 'filename:adobe-xd'],
+  ],
+  'Beyond Code': [['Independent', 'a']],
+  'Global Chat': [
+    ['English', 'emojione-v1:flag-for-united-kingdom'],
+    ['Spanish', 'emojione-v1:flag-for-spain'],
+    ['German', 'emojione-v1:flag-for-germany'],
+  ],
+} as const
+---
+
+<div class="flex relative">
+  <ul id="hero-to-skill" class="relative"></ul>
+
+  <div class="mr-4 whitespace-nowrap py-4">
+    <h2 class="sticky top-[calc(50%-12px)] text-lg font-bold w-32 text-right">My skills</h2>
+  </div>
+  <div class="mr-8 pt-32 w-full" id="skills">
+    {
+      Object.keys(skills).map((skill) => (
+        <div class="h-40 flex gap-x-12 py-4">
+          <h3 class="sticky top-[calc(50%-12px)] h-max w-40 text-lg">{skill}</h3>
+          <ul class="sticky top-[calc(50%-12px)] flex gap-14 flex-1 h-max">
+            {skills[skill as keyof typeof skills].map((s) => (
+              <li class="flex flex-col items-center group" data-skill>
+                <Icon
+                  data-icon
+                  class="w-4 opacity-50 saturate-0 transition-all group-hover:!saturate-100 group-hover:!opacity-100 group-focus-visible:!saturate-100 group-focus-visible:!opacity-100"
+                  style={`width: ${s[2]}`}
+                  name={s[1].startsWith('filename:') ? s[1].split(':')[1] : s[1].includes(':') ? s[1] : `logos:${s[1]}`}
+                />
+                <span class="absolute top-7 text-sm font-bold opacity-0 group-hover:opacity-80 transition-opacity delay-700 group-hover:delay-300">{s[0]}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  const skills = document.getElementById('skills')!
+
+  // When the [data-project] is in the middle
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const icon = entry.target.querySelector('[data-icon]')!
+        icon.classList.toggle('opacity-50', !entry.isIntersecting)
+        icon.classList.toggle('saturate-0', !entry.isIntersecting)
+      })
+    },
+    { rootMargin: '-48% 0px -48% 0px' }
+  )
+
+  skills.querySelectorAll('[data-skill]').forEach((skill) => observer.observe(skill))
+</script>
