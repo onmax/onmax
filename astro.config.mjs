@@ -33,5 +33,6 @@ export default defineConfig({
       transformers: []
     }
   },
-  vite: {}
+  vite: {
+  }
 });

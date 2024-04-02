@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
+layout: ../../layouts/ContentLayout.astro
 title: Nimiq Icons
 ---
 

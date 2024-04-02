@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 const projects = {
   'Current Focus': [
@@ -196,7 +196,7 @@ const projects = {
         icon.classList.toggle('saturate-0', !entry.isIntersecting)
       })
     },
-    { rootMargin: '-48% 0px -48% 0px' }
+    { rootMargin: '-48% 0px -48% 0px' },
   )
 
   projects.querySelectorAll('[data-project]').forEach((project) => observer.observe(project))

@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 const skills = {
   'Code Fluency': [
@@ -82,7 +82,7 @@ const skills = {
         icon.classList.toggle('saturate-0', !entry.isIntersecting)
       })
     },
-    { rootMargin: '-48% 0px -48% 0px' }
+    { rootMargin: '-48% 0px -48% 0px' },
   )
 
   skills.querySelectorAll('[data-skill]').forEach((skill) => observer.observe(skill))

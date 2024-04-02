@@ -16,7 +16,7 @@ interface Props {
 const { frontmatter } = Astro.props
 const headerLinks = (frontmatter.extraHeaderLinks || []).concat(defaultHeadersLinks)
 const robots: boolean = frontmatter.robots === false ? false : true
-const publishedAt = new Date(frontmatter.publishedAt)
+const publishedAt = new Date(frontmatter.publishedAt || Date.now())
 
 import '@fontsource/merriweather'
 import '@fontsource/inter/400.css'

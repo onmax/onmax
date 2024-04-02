@@ -1,6 +1,5 @@
 ---
-import LogoTwitter from '~icons/carbon/logo-x'
-import LogoGithub from '~icons/carbon/logo-github'
+import { Icon } from 'astro-icon/components'
 
 import './base.css'
 import './typography.css'
@@ -44,10 +43,10 @@ import '@fontsource-variable/jetbrains-mono'
         <a class="text-medium inline-block font-medium no-underline capitalize" href="/onmax/labs">maxi labs</a>
         <div class="flex items-center gap-4 ml-auto">
           <a href="https://github.com/onmax" target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors">
-            <LogoGithub class="text-gray-1100/80" />
+            <Icon name="carbon:logo-github" class="text-gray-1100/80" />
           </a>
           <a href="https://twitter.com/_onmax" target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors">
-            <LogoTwitter class="text-gray-1100/80" />
+            <Icon name="carbon:logo-x" class="text-gray-1100/80" />
           </a>
         </div>
       </div>

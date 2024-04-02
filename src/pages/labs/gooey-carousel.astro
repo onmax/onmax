@@ -1,6 +1,6 @@
 ---
 import LabsLayout from '../../layouts/Labs.astro'
-import ArrowRight from '~icons/carbon/arrow-right'
+import { Icon } from 'astro-icon/components'
 import { Content } from './gooey-carousel.md'
 import { Image } from 'astro:assets'
 
@@ -61,7 +61,7 @@ const images = [
       }
     </ul>
     <div class="mt-4 mx-auto flex justify-center items-center main-container">
-      <button id="prev" class="btn gap-1 aspect-square touch:hidden mr-auto" disabled><ArrowRight class="rotate-180 text-[11px] opacity-70 relative -right-px" /></button>
+      <button id="prev" class="btn gap-1 aspect-square touch:hidden mr-auto" disabled><Icon name="carbon:arrow-left" class="text-[11px] opacity-70 relative -right-px" /></button>
       <div class="relative">
         <div style="filter:url('#fancy-goo')" class="opacity-60">
           <ul class="h-2 flex gap-2 touch:h-1.5 indicators" id="indicators">
@@ -87,7 +87,7 @@ const images = [
           </defs>
         </svg>
       </div>
-      <button id="next" class="btn gap-1 aspect-square touch:hidden ml-auto"><ArrowRight class="text-[11px] opacity-70 relative -right-px" /></button>
+      <button id="next" class="btn gap-1 aspect-square touch:hidden ml-auto"><Icon name="carbon:arrow-right" class="text-[11px] opacity-70 relative -right-px" /></button>
     </div>
 
     <hr class="my-12 main-container mx-auto" />
