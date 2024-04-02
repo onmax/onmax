@@ -7,6 +7,7 @@ title: Maxi's Tailwind Application
 description: Learn more about Maxi and why he is the right person for the Staff Software Engineer role at Tailwind Labs.
 robots: false
 publishedAt: 2024-04-02
+heading: Hi Adam and Team!
 ---
 
 <style is:global>
@@ -15,8 +16,6 @@ article {
   @media (min-width: 768px) { margin-top: 96px; }
 }
 </style>
-
-# Hi Adam and Team!
 
 <!-- For mobiles we don't do anything fancy -->
 <img src="/onmax/me.webp" data-no-zoomable class="sm:hidden group-hover:opacity-0 duration-500 opacity-100 transition-opacity max-h-36 mb-0 ml-4 -mt-8 float-right z-10 relative [transform:scaleX(-1)]" />	

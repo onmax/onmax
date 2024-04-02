@@ -5,26 +5,31 @@ title: Nimiq Icons
 
 > This post is a continuation of the [Nimiq UI](./nimiq-ui) post. If you haven't read it yet, I recommend you to do so before continuing.
 
-In Nimiq, we decided to create our own icon set to make the interface more consistent and to have a unique style. That's something great.
+In Nimiq we decided to create our own icon set to make the interface more consistent and have a unique style. It's a great thing.
 
-But the process of using these icons was not as great as the icons themselves. In order to start using a custom icon into a project, you had to go through a lot of steps: copy the icon as SVG, optimize it using [svgomg online tool](https://jakearchibald.github.io/svgomg/), move it to the right folder with an appropriate name, wrap it in its own Vue component, change the colour to `currentColor` and then finally using it in your components.
+But the process of using these icons was not as great as the icons themselves. In order to use a custom icon in a project, you had to go through a lot of steps: copy the icon as SVG, optimise it using the [svgomg online tool](https://jakearchibald.github.io/svgomg/), put it in the right folder with an appropriate name, wrap it in its own Vue component, change the colour to `currentColor` and then finally use it in your components.
 
-This process was time consuming and error prone. I had so many problems. For example, many issues with Safari where you need to explicitely set the height, otherwise it won't be shown. I was tired of this and wanted to make something easy to use.
 
-Creating an icon set that is both easy to maintain and use can be challenging. Initially, I was afraid of the complexity of the problem and also by the fact that I didn't find any similar solution that I could use as a reference.
+This process was time-consuming and error-prone. I had so many problems. For example, in Safari you have to explicitly set the height or it won't display. I was tired of that and wanted to make something that was easy to use.
 
-I wanted a solution that is easy to use, quick to develop, and simple to maintain. As I have often heard, _"just start somewhere"_, and so I did.
+Creating an icon set that is both easy to maintain and easy to use can be challenging. At first I was intimidated by the complexity of the problem and also by the fact that I couldn't find a similar solution to use as a reference.
+
+I wanted a solution that was easy to use, quick to develop and easy to maintain. As I have often heard, _"just start somewhere"_, and so I did.
 
 <!-- So, now I think every one understands the problem and why creating a solution was important (at least for me). -->
 
 ## my first attempt
 
-About one year and a half ago, after working 6 months at Nimiq, I tried to solve this problem. At the time, I thought the final product was close to NASA technology and I felt proud. It was a huge accomplishment. But looking back, I can see that I was trying to solve just part of the problem and **the solution was definitely overengineered**.
-
+About a year and a half ago, after working at Nimiq for 6 months, I tried to solve this problem. At the time, I thought the final product was close to NASA technology and I felt proud. It was a huge achievement. But looking back, I can see that I only tried to solve part of the problem and **the solution was definitely over-engineered**.
 
 The idea was to have each icon as a JSON object in its own [file](https://github.com/onmax/nimiq-icons/tree/main/public/icons). Then the [Icons Explorer](https://onmax.github.io/nimiq-icons/) would crawl the folder and display the icons. Easy peasy _icons_ squeezy.
 
-> And yes, as you can see, the design of the [Icons Explorer](https://onmax.github.io/nimiq-icons/) is a copy of [Heroicons](https://heroicons.com/), but as Picasso said: "Good artists borrow, great artists steal".
+<figure>
+  <img src="/onmax/nimiq-icon-explorer-heroicons.webp" width="644" height="366" class="shadow" />
+  <figcaption>The first version of the <a href="https://onmax.github.io/nimiq-icons/">Icons Explorer</a> was a copy of <a href="https://heroicons.com/">Heroicons</a>.</figcaption>
+</figure>
+
+> In my defence, Picasso said: "Good artists borrow, great artists steal.
 
 This is where it gets interesting. Every time I wanted to add a new icon, I had to fill a form with the name and SVG of the icon. I decided to use [GitHub Issue forms](https://github.com/onmax/nimiq-icons/blob/main/.github/ISSUE_TEMPLATE/new-icon.yaml), which allow maintainers to create a form where users can fill in the information they need. 
 
@@ -34,14 +39,14 @@ To convert the issue form into a structured data format, I created a GitHub Acti
 
 On top of that, I thought it would be cool to create a search system that allows users to search by different keyword. For example, the [`bed` icon](https://github.com/onmax/nimiq-icons/blob/main/public/icons/icon_bed.ts) has the following keywords: "bed", "sleep", "rest", "bed icon", "sleep icon" and "rest icon". Then, if the user search for "sleep", "rest" or "bed" the icon will appear.
 
-To create a list of keywords automatically, I created yet another GitHub Action: the [Create Completion Action](https://github.com/onmax/oai-createcompletion-githubaction). This Action enables interaction with the Open AI API within your workflow. I integrated in a way, that every time a new icon was submitted, a list of keywords was generated and added to the icon file.
+To automatically create a list of keywords, I created another GitHub action: the [Create Completion Action](https://github.com/onmax/oai-createcompletion-githubaction). This action allows you to interact with the Open AI API within your workflow. I integrated it so that every time a new icon was submitted, a list of keywords was generated and added to the icon file.
 
-Ironically, this complex search system does not include [fuzzy search](https://en.wikipedia.org/wiki/Approximate_string_matching).
+Ironically, this complex search system did not include [fuzzy search](https://en.wikipedia.org/wiki/Approximate_string_matching).
 
-As you might be thinking now, this solution was not very scalable or easy to use. Too many steps where things could go wrong. 
+As you might be thinking, this solution was not very scalable or easy to use. Too many steps where things could go wrong.
 
+## The new solution
 
-## the new solution
 
 I realised that I was trying to solve the wrong problem. I was only addressing discoverability, but still was hard to use and a pain to develop with. It required many manual steps and was not easy to maintain.
 

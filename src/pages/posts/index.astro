@@ -1,0 +1,25 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro'
+
+const posts = await Astro.glob('./*.md')
+const files = posts
+  .map((lab) => lab.file.split('/').pop())
+  .map((file) => file!.split('.').shift())
+  .map((name) => ({ name: name?.replace(/-/g, ' '), file: name }))
+
+const title = "Maxi's Blog post"
+---
+
+<ContentLayout frontmatter={{ title }}>
+  <ul class="flex flex-col main-container mx-auto">
+    {
+      files.map((lab, i) => (
+        <li class="link block mr-4">
+          <a href={`posts/${lab.file}`} class="no-underline capitalize">
+            {lab.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</ContentLayout>

@@ -11,12 +11,12 @@ const defaultHeadersLinks = [
 ]
 
 interface Props {
-  frontmatter: { extraHeaderLinks: Header[]; title: string; description: string; robots: boolean; publishedAt: string }
+  frontmatter?: { extraHeaderLinks?: Header[]; title: string; description?: string; robots?: boolean; publishedAt?: string; heading?: string }
 }
 const { frontmatter } = Astro.props
-const headerLinks = (frontmatter.extraHeaderLinks || []).concat(defaultHeadersLinks)
-const robots: boolean = frontmatter.robots === false ? false : true
-const publishedAt = new Date(frontmatter.publishedAt || Date.now())
+const headerLinks = (frontmatter?.extraHeaderLinks || []).concat(defaultHeadersLinks)
+const robots: boolean = frontmatter?.robots === false ? false : true
+const publishedAt = new Date(frontmatter?.publishedAt || Date.now())
 
 import '@fontsource/merriweather'
 import '@fontsource/inter/400.css'
@@ -86,6 +86,7 @@ import '@fontsource-variable/jetbrains-mono'
 
     <main class="mx-auto mt-12 max-w-[692px] px-6 text-gray-1200 antialiased sm:my-12 md:my-16">
       <article>
+        <h1>{frontmatter.heading || frontmatter.title}</h1>
         <slot />
         <hr class="mx-auto mt-12" />
       </article>

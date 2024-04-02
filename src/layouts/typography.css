@@ -75,7 +75,7 @@
         content: "0" counter(item) ".";
         margin-right: 0.25rem;
         font-weight: bold;
-        color: hsl(var(--color-gray-800));
+        color: hsl(var(--color-gray-800) / 0.85);
       }
     }
 
