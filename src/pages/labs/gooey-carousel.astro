@@ -1,0 +1,182 @@
+---
+import LabsLayout from '../../layouts/Labs.astro'
+import ArrowRight from '~icons/carbon/arrow-right'
+import { Content } from './gooey-carousel.md'
+import { Image } from 'astro:assets'
+
+const filename = import.meta.url.replace('file://', '').split('/').pop()!.replace('.astro', '').replace(/-/g, ' ')
+const images = [
+  {
+    title: 'a person standing on top of a large rock',
+    url: 'https://unsplash.com/photos/a-person-standing-on-top-of-a-large-rock-eOWabmCNEdg',
+    author: 'NEOM',
+    img: 'https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3',
+  },
+  {
+    title: 'a man standing in a narrow tunnel in a mountain',
+    url: 'https://unsplash.com/photos/a-man-standing-in-a-narrow-tunnel-in-a-mountain-szVSGKE4kYI',
+    author: 'NEON',
+    img: 'https://images.unsplash.com/photo-1707343844436-37580f155ed2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3',
+  },
+  {
+    title: 'a person kneeling down and holding a rock in their hands',
+    url: 'https://unsplash.com/photos/a-person-kneeling-down-and-holding-a-rock-in-their-hands-9fhAhIvYeEo',
+    author: 'NEON',
+    img: 'https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3',
+  },
+  {
+    title: 'a woman standing on a rocky beach next to the ocean',
+    url: 'https://unsplash.com/photos/a-woman-standing-on-a-rocky-beach-next-to-the-ocean-VJRruV21Fa8',
+    author: 'NEON',
+    img: 'https://images.unsplash.com/photo-1682695798522-6e208131916d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3',
+  },
+]
+---
+
+<LabsLayout title={filename}>
+  <div style="timeline-scope: --carousel-progress">
+    <ul
+      class="w-full flex snap-x snap-mandatory gap-3 md:gap-8 overflow-x-scroll scroll-px-[--container-mx] relative hide-scrollbar scroll-auto"
+      style="scroll-timeline: --carousel-progress inline"
+      id="carousel"
+    >
+      {
+        images.map((image, i) => (
+          <li class="shrink-0 snap-center group first:pl-[--container-mx] last:pr-[--container-mx]" data-active={i === 0 ? 'true' : 'false'}>
+            <Image
+              width="644"
+              height="362"
+              src={image.img}
+              alt={image.title}
+              class="rounded-[4px] main-container shadow opacity-[0.36] group-data-[active=true]:opacity-100 group-hover:opacity-80 transition-opacity duration-300 group-hover:duration-700 object-cover aspect-video"
+            />
+            <p class="group-hover:opacity-70 opacity-0 group-data-[active=true]:opacity-80 delay-100 group-hover:duration-700 group-data-[active-true]:delay-0 transition-opacity text-xs mt-2 [text-wrap:pretty] duration-300 text-center px-3 main-container">
+              {image.title} by{' '}
+              <a href={image.url} target="_blank" rel="noopener noreferrer" class="underline">
+                {image.author}
+              </a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="mt-4 mx-auto flex justify-center items-center main-container">
+      <button id="prev" class="btn gap-1 aspect-square touch:hidden mr-auto" disabled><ArrowRight class="rotate-180 text-[11px] opacity-70 relative -right-px" /></button>
+      <div class="relative">
+        <div style="filter:url('#fancy-goo')" class="opacity-60">
+          <ul class="h-2 flex gap-2 touch:h-1.5 indicators" id="indicators">
+            {
+              images.map((_) => (
+                <li class="flex">
+                  <button class="inline-block aspect-square h-full rounded-full bg-white" />
+                </li>
+              ))
+            }
+          </ul>
+          <div class="aspect-square h-2 touch:h-1.5 touch:m-px rounded-full bg-white absolute left-1/2 top-0 z-100"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="absolute inset-0 w-full h-full pointer-events-none">
+          <defs>
+            <filter id="fancy-goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" class="touch:hidden"></feGaussianBlur>
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" class="hidden touch:block"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -13" result="goo" class="touch:hidden"></feColorMatrix>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -8" result="goo" class="hidden touch:block"></feColorMatrix>
+              <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <button id="next" class="btn gap-1 aspect-square touch:hidden ml-auto"><ArrowRight class="text-[11px] opacity-70 relative -right-px" /></button>
+    </div>
+
+    <hr class="my-12 main-container mx-auto" />
+    <article class="main-container mx-auto">
+      <Content />
+    </article>
+  </div>
+</LabsLayout>
+
+<style>
+  .indicators {
+    animation: carouselProgress auto linear forwards;
+    animation-timeline: --carousel-progress;
+  }
+
+  @keyframes carouselProgress {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(-18px);
+    }
+  }
+</style>
+
+<script>
+  const carousel = document.getElementById('carousel')!
+  const items = carousel.querySelectorAll('li')
+  const prevBtn = document.getElementById('prev')! as HTMLButtonElement
+  const nextBtn = document.getElementById('next')! as HTMLButtonElement
+  const indicators = document.getElementById('indicators')!
+
+  // Find the slide that is closest to the center of the carousel view
+  function getCurrentSlide() {
+    const scrollLeft = carousel.scrollLeft
+    let closest = 0 // Start with the first slide as the closest
+    let smallestDifference = Infinity // Start with infinity as the smallest difference
+
+    items.forEach((item, index) => {
+      const itemCenter = item.offsetLeft + item.offsetWidth / 2
+      const carouselCenter = scrollLeft + carousel.offsetWidth / 2
+      const difference = Math.abs(itemCenter - carouselCenter) // Calculate the difference from the center
+
+      // Update the closest slide if this item is closer to the center
+      if (difference < smallestDifference) {
+        closest = index
+        smallestDifference = difference
+      }
+    })
+
+    return closest
+  }
+
+  function goToSlide(index: number) {
+    const image = carousel.querySelector(`li:nth-child(${index + 1})`)! as HTMLElement
+    carousel.scrollTo({
+      left: image.offsetLeft - (carousel.offsetWidth - image.offsetWidth) / 2,
+      behavior: 'smooth',
+    })
+  }
+
+  nextBtn.addEventListener('mouseup', () => goToSlide(getCurrentSlide() + 1))
+  prevBtn.addEventListener('mouseup', () => goToSlide(getCurrentSlide() - 1))
+  // add arrow right and left keydown event
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+      goToSlide(getCurrentSlide() + 1)
+    } else if (event.key === 'ArrowLeft') {
+      goToSlide(getCurrentSlide() - 1)
+    }
+  })
+
+  carousel.addEventListener('mouseup', (event) => {
+    const { parentElement, tagName } = event.target as HTMLElement
+    if (tagName === 'IMG') {
+      goToSlide(Array.from(parentElement!.parentElement!.children).indexOf(parentElement!))
+    }
+  })
+  indicators.addEventListener('mouseup', (event) => {
+    const { parentElement, tagName } = event.target as HTMLElement
+    if (tagName === 'BUTTON') {
+      goToSlide(Array.from(parentElement!.parentElement!.children).indexOf(parentElement!))
+    }
+  })
+
+  carousel.addEventListener('scroll', () => {
+    const currentSlide = getCurrentSlide()
+    items.forEach((item, index) => (item.dataset.active = index === currentSlide ? 'true' : 'false'))
+    prevBtn.disabled = currentSlide === 0
+    nextBtn.disabled = currentSlide === items.length - 1
+  })
+</script>

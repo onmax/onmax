@@ -1,0 +1,107 @@
+---
+import { Icon } from 'astro-icon/components'
+import './base.css'
+import './typography.css'
+import { SEO } from 'astro-seo'
+
+type Header = { href: string; icon?: string; text?: string }
+const defaultHeadersLinks = [
+  { href: 'https://github.com/onmax', icon: 'carbon:logo-github' },
+  { href: 'https://twitter.com/_onmax', icon: 'carbon:logo-x' },
+]
+
+interface Props {
+  frontmatter: { extraHeaderLinks: Header[]; title: string; description: string; robots: boolean; publishedAt: string }
+}
+const { frontmatter } = Astro.props
+const headerLinks = (frontmatter.extraHeaderLinks || []).concat(defaultHeadersLinks)
+const robots: boolean = frontmatter.robots === false ? false : true
+const publishedAt = new Date(frontmatter.publishedAt)
+
+import '@fontsource/merriweather'
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/500.css'
+import '@fontsource-variable/jetbrains-mono'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO
+      title={frontmatter.title}
+      titleDefault="Maxi's Blog"
+      description={frontmatter.description}
+      noindex={!robots}
+      nofollow={!robots}
+      openGraph={{
+        basic: {
+          title: frontmatter.title,
+          type: 'website',
+          image: '/public/maxi-og-image.png',
+        },
+        article: {
+          authors: ['Maxi'],
+          publishedTime: publishedAt.toISOString(),
+        },
+      }}
+      twitter={{
+        creator: '@_onmax',
+        card: 'summary_large_image',
+      }}
+      extend={{
+        link: [{ rel: 'icon', href: '/public/favicon.svg', type: 'image/svg+xml' }],
+      }}
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./appearance.js"></script>
+
+    <script>
+      import mediumZoom from '../../node_modules/medium-zoom'
+      window.addEventListener('DOMContentLoaded', () => mediumZoom('article img:not([data-no-zoomable])'))
+    </script>
+  </head>
+  <body>
+    <header class="mx-auto my-12 max-w-[692px] px-6 text-gray-1200 antialiased sm:my-12 md:my-16">
+      <div class="flex">
+        <a class="text-medium inline-block font-medium no-underline" href="/">Maxi</a>
+        <div class="flex items-center gap-4 ml-auto">
+          {
+            headerLinks.map(({ href, icon, text }) => (
+              <a href={href} target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors leading-none">
+                {text ? <span class="text-gray-1100 text-[11px]">{text}</span> : <Icon name={icon} class="text-gray-1100/80" />}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <div class="flex gap-1 flex-col md:flex-row">
+        <p class="text-medium font-light leading-none text-gray-1100">Software Developer.</p>
+        <p class="text-medium font-light leading-none text-gray-1100">
+          Working at
+          <a href="https://nimiq.com">Nimiq</a>. <span class="opacity-50 italic">Soon Tailwind Labs.</span>
+        </p>
+      </div>
+    </header>
+
+    <main class="mx-auto mt-12 max-w-[692px] px-6 text-gray-1200 antialiased sm:my-12 md:my-16">
+      <article>
+        <slot />
+        <hr class="mx-auto mt-12" />
+      </article>
+    </main>
+
+    <footer class="mx-auto my-12 max-w-[692px] px-6 text-gray-1200 antialiased flex flex-wrap">
+      <a href="mailto:maximogarciamtnez@gmail.com" class="opacity-70 text-sm">maximogarciamtnez@gmail.com</a>
+      <div class="flex items-center gap-4 ml-auto">
+        {
+          headerLinks.map(({ href, icon, text }) => (
+            <a href={href} target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors leading-none">
+              {text ? <span class="text-gray-1100 text-[11px]">{text}</span> : <Icon name={icon} class="text-gray-1100/80" />}
+            </a>
+          ))
+        }
+      </div>
+    </footer>
+  </body>
+</html>

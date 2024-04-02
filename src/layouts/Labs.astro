@@ -1,0 +1,60 @@
+---
+import LogoTwitter from '~icons/carbon/logo-x'
+import LogoGithub from '~icons/carbon/logo-github'
+
+import './base.css'
+import './typography.css'
+
+const { title } = Astro.props
+
+import '@fontsource/merriweather'
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/500.css'
+import '@fontsource-variable/jetbrains-mono'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style is:global>
+      main {
+        a {
+          text-decoration: underline;
+          text-underline-position: from-font;
+          color: hsl(var(--color-gray-1200) / 0.88);
+          text-decoration-color: hsl(var(--color-gray-800));
+          transition:
+            text-decoration-color 0.2s,
+            color 0.2s;
+
+          &:hover {
+            text-decoration-color: hsl(var(--color-gray-1100));
+            color: hsl(var(--color-gray-1200));
+          }
+        }
+      }
+    </style>
+    <script src="./appearance.js"></script>
+  </head>
+  <body>
+    <header class="mx-auto my-12 max-w-[692px] px-6 text-gray-1200 antialiased sm:my-32 md:my-16">
+      <div class="flex">
+        <a class="text-medium inline-block font-medium no-underline capitalize" href="/onmax/labs">maxi labs</a>
+        <div class="flex items-center gap-4 ml-auto">
+          <a href="https://github.com/onmax" target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors">
+            <LogoGithub class="text-gray-1100/80" />
+          </a>
+          <a href="https://twitter.com/_onmax" target="_blank" rel="noopener noreferrer" class="rounded-md hover:bg-gray-1100/5 p-1 -m-1 transition-colors">
+            <LogoTwitter class="text-gray-1100/80" />
+          </a>
+        </div>
+      </div>
+      {title ? <h1 class="capitalize text-medium font-medium leading-none text-gray-1100">{title}</h1> : null}
+    </header>
+    <main class="mx-auto my-12 text-gray-1200 antialiased pb-40">
+      <slot />
+    </main>
+  </body>
+</html>

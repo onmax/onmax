@@ -1,0 +1,205 @@
+@layer typography {
+  article {
+    :is(h1, h2, h3, h4, h5, h6) {
+      text-wrap: balance;
+
+      :not(&) {
+        text-wrap: pretty;
+      }
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      font-size: 1.1em;
+    }
+
+    h2 {
+      margin-bottom: 0.75rem;
+      font-size: 1em;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      margin-bottom: 0.75rem;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    p+h2 {
+      margin-top: 2.5rem;
+    }
+
+    p {
+      line-height: 1.85;
+      font-size: 15px;
+      color: hsl(var(--color-gray-1200) / 0.83);
+    }
+
+    p+p {
+      margin-top: 1rem;
+    }
+
+    strong {
+      color: hsl(var(--color-gray-1200) / 0.8);
+    }
+
+    ul,
+    ol {
+      line-height: 1.65;
+      font-size: 15px;
+      color: hsl(var(--color-gray-1200) / 0.83);
+      margin-top: .25rem;
+
+      li {
+        padding-top: 1rem;
+
+        &::marker {
+          color: transparent;
+        }
+      }
+    }
+
+    ol {
+      counter-reset: item;
+      padding-left: 1rem;
+
+      li {
+        counter-increment: item;
+      }
+
+      li:before {
+        content: "0" counter(item) ".";
+        margin-right: 0.25rem;
+        font-weight: bold;
+        color: hsl(var(--color-gray-800));
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+      margin-top: 1rem;
+
+      li::before {
+        align-self: center;
+        content: '-';
+        color: hsl(var(--color-gray-800));
+        margin-right: 8px;
+      }
+    }
+
+
+    :is(p, ul, ol)+p {
+      margin-top: 1rem;
+    }
+
+    a:not(.raw) {
+      text-decoration: underline;
+      text-underline-position: from-font;
+      color: hsl(var(--color-gray-1200) / 0.88);
+      text-decoration-color: hsl(var(--color-gray-800));
+      transition: text-decoration-color .2s, color .2s;
+
+      &:hover {
+        text-decoration-color: hsl(var(--color-gray-1100));
+        color: hsl(var(--color-gray-1200));
+      }
+    }
+
+    figure {
+      margin: 1rem 0;
+
+      figcaption {
+        font-size: 0.8em;
+        color: hsl(var(--color-gray-1100));
+        margin-top: 0.5rem;
+        text-align: center;
+
+        code {
+          padding: 0 0.2em;
+          line-height: 1;
+        }
+      }
+    }
+
+    img {
+      margin: 1rem auto;
+      border-radius: 4px;
+    }
+
+    pre {
+      margin: 1rem 0 1.5rem;
+      background-color: hsl(var(--color-gray-300) / 0.45) !important;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      font-size: 0.85em;
+
+      .line::empty {
+        display: none;
+        background-color: pink;
+      }
+    }
+
+    :not(pre) code {
+      color: hsl(var(--color-gray-1100));
+      background-color: hsl(var(--color-gray-300));
+      font-size: 0.95em;
+      border-radius: 0.2rem;
+      padding: 0.1em 0.3em;
+
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid hsl(var(--color-gray-400));
+      margin: 1.5rem auto;
+      max-width: min(10%, 100px);
+    }
+
+    blockquote {
+      margin: 1.5rem -1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      background-color: hsl(var(--color-gray-200));
+
+      @media screen and (min-width: 768px) {
+        margin: 1.5rem 0;
+      }
+
+      p {
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+        color: hsl(var(--color-gray-1100));
+      }
+    }
+
+    &> :is(h1, h2, h3, h4, h5, h6, p, blockquote),
+    &> :is(ul, ol)>li {
+      animation: reveal linear both;
+      animation-timeline: view(max(32px, 3vh));
+    }
+
+    @keyframes reveal {
+      entry 0% {
+        opacity: 0.7;
+      }
+
+      entry 100% {
+        opacity: 1;
+      }
+
+      exit 0% {
+        opacity: 1;
+      }
+
+      exit 100% {
+        opacity: 0.7;
+      }
+    }
+  }
+}

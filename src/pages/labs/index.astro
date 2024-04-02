@@ -1,0 +1,24 @@
+---
+import LabsLayout from '../../layouts/Labs.astro'
+
+const labs = await Astro.glob('./*.astro')
+const files = labs
+  .map((lab) => lab.file.split('/').pop())
+  .map((file) => file!.split('.').shift())
+  .map((name) => ({ name: name?.replace(/-/g, ' '), file: name }))
+---
+
+<LabsLayout>
+  <ul class="grid gap-x-4 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 main-container mx-auto">
+    {
+      files.map((lab, i) => (
+        <li class="link block mr-4">
+          <a href={`labs/${lab.file}`} class="no-underline capitalize">
+            <span class="mr-0.5 opacity-50">{i < 9 ? `0${i + 1}` : i + 1}</span>
+            {lab.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</LabsLayout>
