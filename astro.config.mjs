@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import metaTags from "astro-meta-tags";
+import rehypeExternalLinks from 'rehype-external-links'
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,7 +32,10 @@ export default defineConfig({
       // Add custom transformers: https://shiki.style/guide/transformers
       // Find common transformers: https://shiki.style/packages/transformers
       transformers: []
-    }
+    },
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+    ],
   },
   vite: {
   }
