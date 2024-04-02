@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="flex items-end gap-x-8 z-10">
-    <h1 class="font-serif text-[10rem]/[0.87] md:text-[12rem]/[0.87] lg:text-[15rem]/[0.87] mb-[-18px] ml-[-25px] mr-2 tracking-tighter font-bold text-black glitch layers" data-text="หมีน้อย">
+    <h1 class="font-serif text-[10rem]/[0.87] md:text-[12rem]/[0.87] lg:text-[15rem]/[0.87] mb-[-18px] ml-[-25px] mr-2 font-bold text-black glitch layers" data-text="หมีน้อย">
       <span>Digital</span><br /> Crafter
     </h1>
     <p class="font-sans max-w-[282px] flex-1 text-base/[19.7px]">Fullstack development and data science enthusiast. Pixel-perfect design. Efficiency, independence, communication.</p>
@@ -439,10 +439,18 @@
   }
 
   .glitch::before {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 8s step-end infinite, movement 10s step-end infinite;
+    animation:
+      paths 5s step-end infinite,
+      opacity 5s step-end infinite,
+      font 8s step-end infinite,
+      movement 10s step-end infinite;
   }
 
   .glitch::after {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 7s step-end infinite, movement 8s step-end infinite;
+    animation:
+      paths 5s step-end infinite,
+      opacity 5s step-end infinite,
+      font 7s step-end infinite,
+      movement 8s step-end infinite;
   }
 </style>

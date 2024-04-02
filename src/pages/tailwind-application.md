@@ -19,13 +19,13 @@ article {
 # Hi Adam and Team!
 
 <!-- For mobiles we don't do anything fancy -->
-<img src="/public/me.webp" data-no-zoomable class="sm:hidden group-hover:opacity-0 duration-500 opacity-100 transition-opacity max-h-36 mb-0 ml-4 -mt-8 float-right z-10 relative [transform:scaleX(-1)]" />	
+<img src="/onmax/me.webp" data-no-zoomable class="sm:hidden group-hover:opacity-0 duration-500 opacity-100 transition-opacity max-h-36 mb-0 ml-4 -mt-8 float-right z-10 relative [transform:scaleX(-1)]" />	
 
 <!-- For large screens we add the hover effect to change to the Maxi Junior! -->
 <div class="relative group max-sm:hidden">
-<img src="/public/me.webp" data-no-zoomable class="group-hover:opacity-0 duration-500 opacity-100 transition-opacity max-h-48 mb-0 ml-4 mt-[-89px] float-right z-10 relative object-cover [transform:scaleX(-1)]" width="128" height="192" />	
+<img src="/onmax/me.webp" data-no-zoomable class="group-hover:opacity-0 duration-500 opacity-100 transition-opacity max-h-48 mb-0 ml-4 mt-[-89px] float-right z-10 relative object-cover [transform:scaleX(-1)]" width="128" height="192" />	
 <div class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 mb-0 ml-4 mr-[-144px] mt-[-89px] float-right z-10 relative [transform:scaleX(-1)] w-32 h-32">
-<img src="/public/me-junior.webp" loading="lazy" width="128" height="128" data-no-zoomable class="my-8 object-cover" />	
+<img src="/onmax/me-junior.webp" loading="lazy" width="128" height="128" data-no-zoomable class="my-8 object-cover" />	
 </div>
 <!-- Also add a small arrow and text with a funny tag -->
 <svg xmlns="http://www.w3.org/2000/svg" width="189.178" height="100.553" class="hidden lg:block absolute -top-24 right-[-181px] xl:right-[-200px] z-10"><defs><style>@font-face{font-family:&quot;Virgil&quot;;src:url(https://excalidraw.com/Virgil.woff2)}@font-face{font-family:&quot;Cascadia&quot;;src:url(https://excalidraw.com/Cascadia.woff2)}@font-face{font-family:&quot;Assistant&quot;;src:url(https://excalidraw.com/Assistant-Regular.woff2)}</style></defs><g stroke-linecap="round"><path fill="none" stroke="#bcbcb9" stroke-dasharray="1.5 8" stroke-width="2.5" d="M76.747 63.64c-3.57 3.59-11.95 18.28-22.77 22.76s-35.58 4.19-42.14 4.12"/><path fill="#bcbcb9" fill-rule="evenodd" stroke-width="0" d="m12.567 90.16 12.19-6.28-.39 13.8-13.48-7.14"/><path fill="none" stroke="#bcbcb9" stroke-width="2.5" d="M10.887 91.63c5.25-3.19 8.01-3.03 13.39-8.78m1.76 1.01c.17 4.73-1.79 10.31-.85 14.16m.53.08c-3.91-2.55-8.63-3.69-14.44-8.81m.56 1.23s0 0 0 0"/></g>
