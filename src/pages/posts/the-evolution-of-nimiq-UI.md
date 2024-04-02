@@ -119,4 +119,4 @@ If you want to know more about the library, you can check the [GitHub repository
 
 I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture.
 
-Happy coding, Maxi.
+Happy coding!

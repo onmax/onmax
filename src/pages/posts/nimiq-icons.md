@@ -3,7 +3,7 @@ layout: ../../layouts/ContentLayout.astro
 title: Nimiq Icons
 ---
 
-> This post is a continuation of the [Nimiq UI](./nimiq-ui) post. If you haven't read it yet, I recommend you to do so before continuing.
+> This post is a continuation of the [Nimiq UI](./the-evolution-of-nimiq-UI) post. If you haven't read it yet, I recommend you to do so before continuing.
 
 In Nimiq we decided to create our own icon set to make the interface more consistent and have a unique style. It's a great thing.
 
@@ -18,7 +18,7 @@ I wanted a solution that was easy to use, quick to develop and easy to maintain.
 
 <!-- So, now I think every one understands the problem and why creating a solution was important (at least for me). -->
 
-## my first attempt
+## My first attempt
 
 About a year and a half ago, after working at Nimiq for 6 months, I tried to solve this problem. At the time, I thought the final product was close to NASA technology and I felt proud. It was a huge achievement. But looking back, I can see that I only tried to solve part of the problem and **the solution was definitely over-engineered**.
 
@@ -69,24 +69,23 @@ Investigating further, I found that @antfu himself relies on the `@iconify` libr
 
 ---
 
-I didn't want to reinvent the wheel.
+Luckily for me, I found that `Iconify` already had a function for importing from Figma called [`importFromFigma()`](https://iconify.design/docs/libraries/tools/import/figma/). Obviously someone smart had thought of my situation beforehand. Thank you very much [@cyberalien](https://github.com/cyberalien).
 
-Luckily for me, I found that `Iconify` already had a function for importing from Figma called [`importFromFigma()`](https://iconify.design/docs/libraries/tools/import/figma/). Apparently, someone smart thought about my situation in advance. Thank you!
+This function is very easy to use and does all the heavy lifting for you. All you have to do is provide the Figma URL and your Figma API key, and it will fetch the `Frame` objects you choose and convert them to the `Iconify` format.
 
-This function is very easy to use and it does all the heavy lifting for you. You just need to provide the Figma URL and your Figma API key and it will fetch the `Frame` objects you decide and convert them into `Iconify` format.
+In my case, I decided that the [Figma file with the icons](https://www.figma.com/file/iyfVJafk18HfrYLXukpf0n/Nimiq-Icons) would contain 4 top level `Frames`. One frame for each variant: Normal Icons, Large Icons, Logos and Flags. This way we can organise the icons a bit better. The top level `Frames` that start with an underscore are ignored by the [script](https://github.com/onmax/nimiq-ui/blob/main/packages/nimiq-icons/src/client.ts#L18).
 
-In my case, I decided that the [Figma file with the icons](https://www.figma.com/file/iyfVJafk18HfrYLXukpf0n/Nimiq-Icons) woudl contain 4 top level `Frames`. One `Frame` for each variant: Normal Icons, Large Icons, Logos and Flags. This way, we can organise a bit better the icons. The top level `Frames` that start with underscore are ignored by the [script](https://github.com/onmax/nimiq-ui/blob/main/packages/nimiq-icons/src/client.ts#L18).
+After importing all the variants, I run [THE script](https://github.com/onmax/nimiq-ui/blob/main/packages/nimiq-icons/src/icon.ts). The script goes through all the icons and performs transformations, including cleaning up the icon, optimising the SVG using `svgo`, and changing the colour to `currentColor` for some of the icons.
 
+Then you can run custom functions. In my case, the `spinner` icon is processed by injecting the `animateTransform` attribute to animate it automatically. Similarly, when processing the `logo` variant, a copy of each logo is made to generate the sub-variant `logo-monochrome`, which replaces the logo's colour with `currentColor` so that we can add another colour to it if the design requires it.
 
-After importing all the variants, I run [THE script](https://github.com/onmax/nimiq-ui/blob/main/packages/nimiq-icons/src/icon.ts). The script goes through all the icons and applies transformations, including cleaning up the icon, optimizing the SVG using `svgo`, and changing the colour to `currentColor` for some of the icons.
+Once the script has finished processing the icons, it generates the `iconify` JSON file and publishes it to `npm` using [`exportJSONPackage`](https://iconify.design/docs/libraries/tools/export/json-package.html).
 
-Then, custom functions can be executed. In my case, the `spinner` icon is processed by injecting the `animateTransform` attribute to automatically animate it. Similarly, when processing the `logo` variant, a copy of each logo is created to generate the sub-variant `logo-monochrome`, which replaces the logo's colour with 'currentColor' so we can add another colour to it if the design requires it.
-
-Once the script has finished processing the icons, it generates the `Iconify` JSON file and publishes it to `npm` using [`exportJSONPackage`](https://iconify.design/docs/libraries/tools/export/json-package.html).
-
-This whole process has been automated using [GitHub Action](https://github.com/onmax/nimiq-ui/blob/main/.github/workflows/icons.yml). But differently to my first attempt, the Action just run a TypeScript script where all the magic happens. Much easier to maintain, understand and can be easily moved to another CI provider if needed.
+This whole process has been automated using the [GitHub Action](https://github.com/onmax/nimiq-ui/blob/main/.github/workflows/icons.yml). But unlike my first attempt, the action simply executes a TypeScript script where all the magic happens. Much easier to maintain, understand and can be easily moved to another CI provider if needed.
  
+You can explore all the icons in the [new Icons Explorer](https://onmax.github.io/nimiq-developer-center/build/ui/design/icons). For now, this icons set is not publicly available, but I am working on it. Stay tuned.
 
+If you have any questions or suggestions, feel free to reach out to me!
 
-<!-- TODO Add diagram of the whole process -->
-<!-- TODO Add screenshot of the Heroicons -->
+Happy coding!
+
