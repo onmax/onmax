@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/ContentLayout.astro
 extraHeaderLinks:
-  - href: https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
+  - href: /onmax/maxi-garcia_cv.pdf
     text: CV
 title: Maxi's Tailwind Application
 description: Learn more about Maxi and why he is the right person for the Staff Software Engineer role at Tailwind Labs.
