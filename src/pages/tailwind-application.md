@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ContentLayout.astro
+layout: ../layouts/TailwindLayout.astro
 extraHeaderLinks:
   - href: /onmax/maxi-garcia_cv.pdf
     text: CV

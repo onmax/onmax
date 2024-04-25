@@ -83,7 +83,7 @@ Once the script has finished processing the icons, it generates the `iconify` JS
 
 This whole process has been automated using the [GitHub Action](https://github.com/onmax/nimiq-ui/blob/main/.github/workflows/icons.yml). But unlike my first attempt, the action simply executes a TypeScript script where all the magic happens. Much easier to maintain, understand and can be easily moved to another CI provider if needed.
  
-You can explore all the icons in the [new Icons Explorer](https://onmax.github.io/nimiq-developer-center/build/ui/design/icons). For now, this icons set is not publicly available, but I am working on it. Stay tuned.
+You can explore all the icons in the [new Icons Explorer](https://nimiq.com/developers/build/ui/design/icons). For now, this icons set is not publicly available, but I am working on it. Stay tuned.
 
 If you have any questions or suggestions, feel free to reach out to me!
 

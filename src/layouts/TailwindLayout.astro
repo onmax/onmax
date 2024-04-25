@@ -11,7 +11,7 @@ const defaultHeadersLinks = [
 ]
 
 interface Props {
-  frontmatter: { extraHeaderLinks?: Header[]; title: string; description?: string; robots?: boolean; publishedAt?: string; heading?: string }
+  frontmatter?: { extraHeaderLinks?: Header[]; title: string; description?: string; robots?: boolean; publishedAt?: string; heading?: string }
 }
 const { frontmatter } = Astro.props
 const headerLinks = (frontmatter?.extraHeaderLinks || []).concat(defaultHeadersLinks)
@@ -64,7 +64,7 @@ import '@fontsource-variable/jetbrains-mono'
   <body>
     <header class="mx-auto my-12 max-w-[692px] px-6 text-gray-1200 antialiased sm:my-12 md:my-16">
       <div class="flex">
-        <a class="text-medium inline-block font-medium no-underline" href="/onmax/posts">Maxi</a>
+        <a class="text-medium inline-block font-medium no-underline" href="/onmax">Maxi</a>
         <div class="flex items-center gap-4 ml-auto">
           {
             headerLinks.map(({ href, icon, text }) => (
@@ -76,9 +76,10 @@ import '@fontsource-variable/jetbrains-mono'
         </div>
       </div>
       <div class="flex gap-1 flex-col md:flex-row">
-        <p class="text-medium font-light leading-none text-gray-1100">Software Developer</p>
+        <p class="text-medium font-light leading-none text-gray-1100">Software Developer.</p>
         <p class="text-medium font-light leading-none text-gray-1100">
-          @<a href="https://nimiq.com">Nimiq</a>.
+          Working at
+          <a href="https://nimiq.com">Nimiq</a>. <span class="opacity-50 italic">Soon Tailwind Labs.</span>
         </p>
       </div>
     </header>

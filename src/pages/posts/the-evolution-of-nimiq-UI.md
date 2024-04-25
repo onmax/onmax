@@ -8,9 +8,9 @@ title: The Evolution of Nimiq UI
 
 <!-- TODO Put the logos -->
 
-When I started building the [Nimiq Developer Center](https://github.com/onmax/nimiq-developer-center), I realised that I was building the same components over and over again. I was building the same links as in the [Nimiq Website](https://nimiq.com), using the same colours as in the [Crypto Map](https://map.nimiq.com), and using the same icons as in every other application on Nimiq. I had had enough. I wanted to build a library that would help me build interfaces faster and more consistently.
+When I started building the [Nimiq Developer Center](https://nimiq.com/developers), I realised that I was building the same components over and over again. I was building the same links as in the [Nimiq Website](https://nimiq.com), using the same colours as in the [Crypto Map](https://map.nimiq.com), and using the same icons as in every other application on Nimiq. I had had enough. I wanted to build a library that would help me build interfaces faster and more consistently.
 
-This was not a new problem, I had tried to solve it in the past. I created the [Nimiq TailwindCSS Theme](https://onmax.github.io/tailwindcss-nimiq/), but that was not enough. I wanted to build the house from the roof up. So I took a step back and started building the foundation.
+This was not a new problem, I had tried to solve it in the past. I created the [Nimiq TailwindCSS Theme](https://onmax.github.io/tailwindcss-nimiq/), but it was not enough. I was building the house from the roof up. So I took a step back and started building the foundation.
 
 ## The new Nimiq CSS library
 
@@ -82,7 +82,7 @@ This is the power of composability.
  
 ---
 
-**This library is not yet ready for production use**. We don't even have proper documentation for it, although we do have a [demo](https://onmax.github.io/nimiq-ui/) where you can see all the components and utilities that are included in the library. I plan to release it soon, but as the saying goes, _"eat your own dog food"_, and therefore I want to continue testing this library in the [Nimiq Developer Center](https://nimiq.com) and the [Crypto Map](https://map.nimiq.com) to see how it works in a real project. 
+**This library is not yet ready for production use**. We don't even have proper documentation for it, although we do have a [demo](https://onmax.github.io/nimiq-ui/) where you can see all the components and utilities that are included in the library. I plan to release it soon, but as the saying goes, _"eat your own dog food"_, and therefore I want to continue testing this library in the [Nimiq Developer Center](https://nimiq.com) and the [Crypto Map](https://map.nimiq.com) to see how it works in a real project. You can track my progress in [this PR](https://github.com/nimiq/crypto-map/pull/8).
 
 Nonetheless, if you are curious you can start using this library in your project by installing it from npm:
 
@@ -111,12 +111,12 @@ The library is divided into four parts, each with its own [CSS layer](https://de
 3. Utilities: Provides utility classes for creating UI elements such as buttons, input and links, as we saw earlier.
 4. Typography: A set of typographic utilities to improve text styling. The CSS structure is heavily inspired by the [Tailwind Typography Plugin](https://github.com/tailwindlabs/tailwindcss-typography). Adding a `prose` class to a container will automatically style the text inside it.
 
-A fun little easter egg is that Chat GPT made me a story with different typography elements to help me build the typography section of the library. You can go to the [demo](https://onmax.github.io/nimiq-ui/) and read the interesting story.
+A fun little easter egg is that Chat GPT made me a story with different typography elements to help me build the typography section of the library. You can go to the [demo](https://onmax.github.io/nimiq-ui/), click in "Typography", and read the interesting story.
 
 If you want to know more about the library, you can check the [GitHub repository](https://github.com/onmax/nimiq-ui/tree/main/packages/nimiq-css). Any feedback is welcome.
 
 <!-- TODO MEntion nimiq-tailwindcss -->
 
-I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture.
+<!-- I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture. -->
 
 Happy coding!
