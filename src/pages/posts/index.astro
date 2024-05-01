@@ -7,9 +7,6 @@ const files = posts
   .map((file) => file!.split('.').shift())
   .map((name) => ({ name: name?.replace(/-/g, ' '), file: name }))
 
-  // ignore nimiq-icons.md
-  .filter((lab) => lab.file !== 'nimiq-icons')
-
 const title = "Maxi's Blog post"
 ---
 

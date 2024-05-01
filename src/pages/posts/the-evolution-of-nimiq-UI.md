@@ -6,8 +6,6 @@ title: The Evolution of Nimiq UI
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nimiq-css@latest/dist/css/colors.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nimiq-css@latest/dist/css/utilities.css">
 
-<!-- TODO Put the logos -->
-
 When I started building the [Nimiq Developer Center](https://nimiq.com/developers), I realised that I was building the same components over and over again. I was building the same links as in the [Nimiq Website](https://nimiq.com), using the same colours as in the [Crypto Map](https://map.nimiq.com), and using the same icons as in every other application on Nimiq. I had had enough. I wanted to build a library that would help me build interfaces faster and more consistently.
 
 This was not a new problem, I had tried to solve it in the past. I created the [Nimiq TailwindCSS Theme](https://onmax.github.io/tailwindcss-nimiq/), but it was not enough. I was building the house from the roof up. So I took a step back and started building the foundation.
@@ -115,8 +113,6 @@ A fun little easter egg is that Chat GPT made me a story with different typograp
 
 If you want to know more about the library, you can check the [GitHub repository](https://github.com/onmax/nimiq-ui/tree/main/packages/nimiq-css). Any feedback is welcome.
 
-<!-- TODO MEntion nimiq-tailwindcss -->
-
-<!-- I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture. -->
+I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture.
 
 Happy coding!
