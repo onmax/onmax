@@ -3,7 +3,7 @@ layout: ../../layouts/ContentLayout.astro
 title: Nimiq Icons
 ---
 
-> This post is a continuation of the [Nimiq UI](./the-evolution-of-nimiq-UI) post. If you haven't read it yet, I recommend you to do so before continuing.
+> This post is a continuation of the [Nimiq UI](/onmax/posts/the-evolution-of-nimiq-UI) post. If you haven't read it yet, I recommend you to do so before continuing.
 
 At Nimiq we have our own icon set to make the interface more consistent and have a unique style. It's a great thing.
 

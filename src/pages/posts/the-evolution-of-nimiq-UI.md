@@ -113,6 +113,7 @@ A fun little easter egg is that Chat GPT made me a story with different typograp
 
 If you want to know more about the library, you can check the [GitHub repository](https://github.com/onmax/nimiq-ui/tree/main/packages/nimiq-css). Any feedback is welcome.
 
-I also wrote about my adventure in building the [Nimiq Icons](./nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture.
+
+> I also wrote about my adventure in building the [Nimiq Icons](/onmax/posts/nimiq-icons) library, which is a continuation of this post. I suggest you read it to get the full picture.
 
 Happy coding!
