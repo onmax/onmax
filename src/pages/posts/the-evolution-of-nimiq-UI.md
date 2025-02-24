@@ -27,11 +27,11 @@ This is the same philosophy that [Tailwind CSS](https://tailwindcss.com/) and [V
 Let's look at an example of what I mean. Let's start with an ordinary pill:
 
 <figure class="flex flex-col gap-2 items-center my-8">
-  <button class="pill-tertiary pill-sm opacity-70">Button</button>
-  <figcaption>A button with the classes <code>pill-tertiary</code> and <code>pill-sm</code>.</figcaption>
+  <button class="nq-pill-tertiary nq-pill-sm opacity-70">Button</button>
+  <figcaption>A button with the classes <code>nq-pill-tertiary</code> and <code>nq-pill-sm</code>.</figcaption>
 </figure>
 
-As you can see, the `pill-tertiary` class just adds the minimal styles to make it look like a pill. We also added the `pill-sm` class to reduce the `padding` and `font-size`, but you are not limited to the defaults provided by the library. You can override them by adding your own styles.
+As you can see, the `nq-pill-tertiary` class just adds the minimal styles to make it look like a pill. We also added the `nq-pill-sm` class to reduce the `padding` and `font-size`, but you are not limited to the defaults provided by the library. You can override them by adding your own styles.
 
 Now let's have a look at this other component:
 
@@ -40,12 +40,12 @@ Now let's have a look at this other component:
   <div class="relative">
     <span aria-hidden class="absolute -top-2.5 -left-8 text-gray-800 font-bold whitespace-nowrap text-[10px] tracking-wider uppercase pointer-events-none -rotate-[25deg] skew-y-12">Hover me</span>
     <div class="flex gap-8 opacity-70">
-      <a href="#" class="arrow raw">Internal Link</a>
-      <a href="https://nimiq.com" class="arrow raw">Visit nimiq.com</a>
+      <a href="#" class="nq-arrow nq-raw">Internal Link</a>
+      <a href="https://nimiq.com" class="nq-arrow nq-raw">Visit nimiq.com</a>
     </div>
   </div>
 
-  <figcaption>Two link elements with the class <code>arrow</code>.</figcaption>
+  <figcaption>Two link elements with the class <code>nq-arrow</code>.</figcaption>
 </figure>
 
 At this point you might be thinking that this is just a link with an arrow on it. And you would be right. This is the essence of the library: Simplicity.
@@ -60,20 +60,20 @@ As you can see, these components are simple in themselves. They only focus on on
 
 <figure class="flex flex-col gap-2 items-center my-8">
   <div class="flex gap-2 opacity-70">
-    <a href="https://nimiq.com" class="pill-tertiary pill-sm arrow raw">Visit nimiq.com</a>
+    <a href="https://nimiq.com" class="nq-pill-tertiary nq-pill-sm nq-arrow">Visit nimiq.com</a>
   </div>
 
-  <figcaption>A link combining <code>arrow</code> and <code>pill</code> classes.</figcaption>
+  <figcaption>A link combining <code>nq-arrow</code> and <code>nq-pill</code> classes.</figcaption>
 </figure>
 
 Wait, wait, wait. Did you see that? Let's try something else:
 
 <figure class="flex flex-col gap-2 items-center my-8">
   <div class="flex gap-2">
-    <button class="pill-secondary loading raw" disabled>Loading</button>
+    <button class="nq-pill-secondary nq-loading nq-raw" disabled>Loading</button>
   </div>
 
-  <figcaption>A button combining <code>loading</code> and <code>pill</code> classes.</figcaption>
+  <figcaption>A button combining <code>nq-loading</code> and <code>nq-pill</code> classes.</figcaption>
 </figure>
 
 This is the power of composability.
