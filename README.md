@@ -24,9 +24,12 @@ Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxthub/core](h
 
 - **[nimiq-ui](https://github.com/onmax/nimiq-ui)** — UI components for Nimiq
 - **[albatross-rpc-client-ts](https://github.com/onmax/albatross-rpc-client-ts)** — Fully typed Nimiq RPC client
+- **[nimiq-mcp](https://github.com/onmax/nimiq-mcp)** — MCP server for Nimiq blockchain
 - **[nimiq-starter](https://github.com/onmax/nimiq-starter)** — Starter templates for Nimiq web client
 - **[nimiq-changelog](https://github.com/onmax/nimiq-changelog)** — Track changes from Nimiq repos
 - **[nimiq-awesome](https://github.com/onmax/nimiq-awesome)** — Curated list of Nimiq projects
+
+Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer-center)
 
 ## tools
 
