@@ -5,13 +5,13 @@
 
 Digital Crafter. Fullstack dev. Curious builder.
 
-## ai & agent skills
+## 🤖 ai & agent skills
 
 - **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
 - **[npm-agentskills](https://github.com/onmax/npm-agentskills)** — Framework-agnostic skill discovery for AI agents
 - **[agent-skills-server](https://github.com/onmax/agent-skills-server)** — Serve Agent Skills via /.well-known/skills/
 
-## nuxt ecosystem
+## 💚 nuxt ecosystem
 
 - **[nuxt-better-auth](https://github.com/onmax/nuxt-better-auth)** — Auth framework for Nuxt
 - **[nuxt-safe-runtime-config](https://github.com/onmax/nuxt-safe-runtime-config)** — Validate runtime config with Standard Schema
@@ -20,7 +20,7 @@ Digital Crafter. Fullstack dev. Curious builder.
 
 Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxthub/core](https://github.com/nuxthub/core), [nuxt/content](https://github.com/nuxt/content)
 
-## nimiq
+## ⚡ nimiq
 
 - **[nimiq-ui](https://github.com/onmax/nimiq-ui)** — UI components for Nimiq
 - **[albatross-rpc-client-ts](https://github.com/onmax/albatross-rpc-client-ts)** — Fully typed Nimiq RPC client
@@ -31,7 +31,7 @@ Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxthub/core](h
 
 Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer-center)
 
-## tools
+## 🛠️ tools
 
 - **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
 - **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
