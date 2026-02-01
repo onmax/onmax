@@ -10,6 +10,7 @@ Digital Crafter. Fullstack dev. Curious builder.
 - 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
 - 📦 **[npm-agentskills](https://github.com/onmax/npm-agentskills)** — Framework-agnostic skill discovery for AI agents
 - 🌐 **[agent-skills-server](https://github.com/onmax/agent-skills-server)** — Serve Agent Skills via /.well-known/skills/
+- 🤖 **[unagent](https://github.com/onmax/unagent)** — Unified primitives for AI coding agents
 
 ## 💚 nuxt ecosystem
 
@@ -18,7 +19,11 @@ Digital Crafter. Fullstack dev. Curious builder.
 - 📝 **[nuxt-formisch](https://github.com/onmax/nuxt-formisch)** — Schema-based, headless form library
 - 🔄 **[nuxt-convex](https://github.com/onmax/nuxt-convex)** — Nuxt module for Convex
 
-Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxthub/core](https://github.com/nuxthub/core), [nuxt/content](https://github.com/nuxt/content)
+Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxthub/core](https://github.com/nuxthub/core), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
+
+## 🔧 js ecosystem
+
+- 🗄️ **[db-compat](https://github.com/onmax/db-compat)** — Database compatibility layer
 
 ## ⚡ nimiq
 
