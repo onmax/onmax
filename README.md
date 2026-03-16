@@ -7,7 +7,8 @@ Digital Crafter. Fullstack dev. Curious builder.
 
 ## 🤖 ai & agent skills
 
-- 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
+- 🧠 **[nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub)** — Teach your AI agent the Nuxt way with best practices and module guidance
+- 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants *(being replaced by nuxt-skill-hub)*
 - 📦 **[npm-agentskills](https://github.com/onmax/npm-agentskills)** — Framework-agnostic skill discovery for AI agents
 - 🌐 **[agent-skills-server](https://github.com/onmax/agent-skills-server)** — Serve Agent Skills via /.well-known/skills/
 - 🤖 **[unagent](https://github.com/onmax/unagent)** — Unified primitives for AI coding agents
@@ -39,5 +40,6 @@ Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer
 ## 🛠️ tools
 
 - 🌳 **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
+- 🔍 **[pr-review-agent](https://github.com/onmax/pr-review-agent)** — GitHub PR review agent using Claude Code with parallel subagents
 - 🌍 **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
 - 📧 **[email-labeller](https://github.com/onmax/email-labeller)** — AI-powered email classification
