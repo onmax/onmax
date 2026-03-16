@@ -40,6 +40,5 @@ Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer
 ## 🛠️ tools
 
 - 🌳 **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
-- 🔍 **[pr-review-agent](https://github.com/onmax/pr-review-agent)** — GitHub PR review agent using Claude Code with parallel subagents
 - 🌍 **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
 - 📧 **[email-labeller](https://github.com/onmax/email-labeller)** — AI-powered email classification
