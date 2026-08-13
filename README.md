@@ -1,6 +1,6 @@
 # Hi, I'm Maxi 👋
 
-[![Website](https://img.shields.io/badge/onmax.me-000?style=flat&logo=vercel)](https://onmax.me)
+[![Website](https://img.shields.io/badge/onmax.me-000?style=flat&logo=vercel)](https://onmax.me/hire)
 [![PRs](https://img.shields.io/badge/contributions-prs.onmax.me-blue)](https://prs.onmax.me)
 
 Digital Crafter. Fullstack dev. Curious builder.
@@ -8,7 +8,12 @@ Digital Crafter. Fullstack dev. Curious builder.
 ## 🤖 ai & agent tooling
 
 - 🧩 **[ViteHub](https://github.com/vite-hub/vitehub)** — Server primitives for Vite, with agent runtime, workspace, scheduling, storage, and search capabilities
+- 💬 **[Chat SDK](https://github.com/vercel/chat)** — Unified TypeScript SDK for chatbots across Discord, Slack, Teams, Telegram, and more
+- 🌵 **[Cactus](https://usecactus.app)** — Website blocker for macOS with recurring schedules
+- 🎓 **[Formula 100](https://formula-100.com)** — Learn Spanish through connected dialogues, focused notes, audio, active recall, and speaking
 - 🩺 **[vite-doctor](https://github.com/onmax/vite-doctor)** — Catch AI slop in Vite, Nuxt, and Vue projects
+- 📥 **[ViteHub Drop](https://github.com/vite-hub/drop)** — Permanent file URLs and temporary rendered code images for agents
+- 🦀 **[Crabbox](https://github.com/openclaw/crabbox)** — Remote software testing and execution with streamed, auditable evidence
 - 🧠 **[nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub)** — Teach your AI agent the Nuxt way with best practices and module guidance
 - 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
 - 🧰 **[skills](https://github.com/onmax/skills)** — Agent skills from work on ViteHub, Nuxt, auth, validation, Nimiq, and AI coding tools
@@ -23,12 +28,16 @@ Digital Crafter. Fullstack dev. Curious builder.
 - 🚀 **[nuxthub-better-auth-starter](https://github.com/onmax/nuxthub-better-auth-starter)** — NuxtHub + Better Auth starter template
 - 🔑 **[better-auth-cross-device](https://github.com/onmax/better-auth-cross-device)** — Better Auth plugin for cross-device flows
 
-Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](https://github.com/nuxt/nuxt.com), [nuxt-hub/core](https://github.com/nuxt-hub/core), [nuxt/ui](https://github.com/nuxt/ui), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
+Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](https://github.com/nuxt/nuxt.com), [nuxt-hub/core](https://github.com/nuxt-hub/core), [nuxt/ui](https://github.com/nuxt/ui), [nuxt/icon](https://github.com/nuxt/icon), [nuxt-modules/i18n](https://github.com/nuxt-modules/i18n), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
 
 ## 🔧 js ecosystem
 
 - 🗄️ **[db-compat](https://github.com/onmax/db-compat)** — Database compatibility layer
+- 🗂️ **[Files SDK](https://github.com/haydenbleasel/files-sdk)** — Unified storage API for object and blob backends
+- 🛒 **[mathem-cli](https://github.com/onmax/mathem-cli)** — Search Mathem products and prepare a grocery cart from the terminal
 - 🎮 **[phaser-vue](https://github.com/onmax/phaser-vue)** — Phaser experiments in Vue
+
+Also contributing to [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia)
 
 ## ⚡ nimiq
 
@@ -47,3 +56,4 @@ Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer
 - 🌳 **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
 - 🌍 **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
 - 📧 **[email-labeller](https://github.com/onmax/email-labeller)** — AI-powered email classification
+- 🔀 **[my-pull-requests](https://github.com/onmax/my-pull-requests)** — Showcase recent open-source contributions with an RSS feed
