@@ -8,12 +8,10 @@ Digital Crafter. Fullstack dev. Curious builder.
 ## 🤖 ai & agent tooling
 
 - 🧩 **[ViteHub](https://github.com/vite-hub/vitehub)** — Server primitives for Vite, with agent runtime, workspace, scheduling, storage, and search capabilities
-- 💬 **[Chat SDK](https://github.com/vercel/chat)** — Unified TypeScript SDK for chatbots across Discord, Slack, Teams, Telegram, and more
 - 🌵 **[Cactus](https://usecactus.app)** — Website blocker for macOS with recurring schedules
 - 🎓 **[Formula 100](https://formula-100.com)** — Learn Spanish through connected dialogues, focused notes, audio, active recall, and speaking
 - 🩺 **[vite-doctor](https://github.com/onmax/vite-doctor)** — Catch AI slop in Vite, Nuxt, and Vue projects
-- 📥 **[ViteHub Drop](https://github.com/vite-hub/drop)** — Permanent file URLs and temporary rendered code images for agents
-- 🦀 **[Crabbox](https://github.com/openclaw/crabbox)** — Remote software testing and execution with streamed, auditable evidence
+- 🫳 **[ViteHub Drop](https://github.com/vite-hub/drop)** — Permanent file URLs and temporary rendered code images for agents
 - 🧠 **[nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub)** — Teach your AI agent the Nuxt way with best practices and module guidance
 - 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
 - 🧰 **[skills](https://github.com/onmax/skills)** — Agent skills from work on ViteHub, Nuxt, auth, validation, Nimiq, and AI coding tools
@@ -37,7 +35,7 @@ Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](
 - 🛒 **[mathem-cli](https://github.com/onmax/mathem-cli)** — Search Mathem products and prepare a grocery cart from the terminal
 - 🎮 **[phaser-vue](https://github.com/onmax/phaser-vue)** — Phaser experiments in Vue
 
-Also contributing to [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia)
+Also contributing to [vercel/chat](https://github.com/vercel/chat), [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia)
 
 ## ⚡ nimiq
 
