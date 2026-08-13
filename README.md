@@ -26,7 +26,7 @@ Digital Crafter. Fullstack dev. Curious builder.
 - 🚀 **[nuxthub-better-auth-starter](https://github.com/onmax/nuxthub-better-auth-starter)** — NuxtHub + Better Auth starter template
 - 🔑 **[better-auth-cross-device](https://github.com/onmax/better-auth-cross-device)** — Better Auth plugin for cross-device flows
 
-Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](https://github.com/nuxt/nuxt.com), [nuxt-hub/core](https://github.com/nuxt-hub/core), [nuxt/ui](https://github.com/nuxt/ui), [nuxt/icon](https://github.com/nuxt/icon), [nuxt-modules/i18n](https://github.com/nuxt-modules/i18n), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
+Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](https://github.com/nuxt/nuxt.com), [nuxt-hub/core](https://github.com/nuxt-hub/core), [nuxt/ui](https://github.com/nuxt/ui), [nuxt/icon](https://github.com/nuxt/icon), [nuxt-modules/i18n](https://github.com/nuxt-modules/i18n), [Norbiros/nuxt-open-fetch](https://github.com/Norbiros/nuxt-open-fetch), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
 
 ## 🔧 js ecosystem
 
