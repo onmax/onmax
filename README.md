@@ -31,7 +31,6 @@ Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](
 ## 🔧 js ecosystem
 
 - 🗄️ **[db-compat](https://github.com/onmax/db-compat)** — Database compatibility layer
-- 🗂️ **[Files SDK](https://github.com/haydenbleasel/files-sdk)** — Unified storage API for object and blob backends
 - 🛒 **[mathem-cli](https://github.com/onmax/mathem-cli)** — Search Mathem products and prepare a grocery cart from the terminal
 - 🎮 **[phaser-vue](https://github.com/onmax/phaser-vue)** — Phaser experiments in Vue
 
