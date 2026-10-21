@@ -12,6 +12,7 @@ Digital Crafter. Fullstack dev. Curious builder.
 - 🎓 **[Formula 100](https://formula-100.com)** — Learn Spanish through connected dialogues, focused notes, audio, active recall, and speaking
 - 🩺 **[vite-doctor](https://github.com/onmax/vite-doctor)** — Catch AI slop in Vite, Nuxt, and Vue projects
 - 🫳 **[ViteHub Drop](https://github.com/vite-hub/drop)** — Permanent file URLs and temporary rendered code images for agents
+- 🍼 **[ViteHub Babysitter](https://github.com/vite-hub/babysitter)** — Customizable ViteHub template for babysitting pull requests
 - 🧠 **[nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub)** — Teach your AI agent the Nuxt way with best practices and module guidance
 - 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
 - 🧰 **[skills](https://github.com/onmax/skills)** — Agent skills from work on ViteHub, Nuxt, auth, validation, Nimiq, and AI coding tools
@@ -30,11 +31,12 @@ Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](
 
 ## 🔧 js ecosystem
 
+- 🖍️ **[comark-plugins](https://github.com/onmax/comark-plugins)** — Comark plugins for review documents: annotated screenshots, charts, carousels, tabs, zoom, and lint
 - 🗄️ **[db-compat](https://github.com/onmax/db-compat)** — Database compatibility layer
 - 🛒 **[mathem-cli](https://github.com/onmax/mathem-cli)** — Search Mathem products and prepare a grocery cart from the terminal
 - 🎮 **[phaser-vue](https://github.com/onmax/phaser-vue)** — Phaser experiments in Vue
 
-Also contributing to [vercel/chat](https://github.com/vercel/chat), [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia)
+Also contributing to [vercel/chat](https://github.com/vercel/chat), [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia), [comarkdown/comark](https://github.com/comarkdown/comark)
 
 ## ⚡ nimiq
 
@@ -53,4 +55,5 @@ Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer
 - 🌳 **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
 - 🌍 **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
 - 📧 **[email-labeller](https://github.com/onmax/email-labeller)** — AI-powered email classification
-- 🔀 **[my-pull-requests](https://github.com/onmax/my-pull-requests)** — Showcase recent open-source contributions with an RSS feed
+- 🥗 **[calories](https://github.com/vite-hub/calories)** — Telegram meal logging with a public read-only ViteHub dashboard
+- 🔀 **[my-pull-requests](https://github.com/vite-hub/my-pull-requests)** — Showcase recent open-source contributions with an RSS feed
