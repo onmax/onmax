@@ -2,7 +2,7 @@
 
 I build apps, open-source libraries, and tools for AI agents.
 
-💼 **Open to work.** Reach me at [maximogarciamtnez@gmail.com](mailto:maximogarciamtnez@gmail.com).
+💼 **Open to work.** Reach me at [hello@onmax.me](mailto:hello@onmax.me).
 
 [![Website: onmax.me](https://comark-ui.onmax.me/badge.svg?label=website&value=onmax.me)](https://onmax.me/hire)
 [![Contributions: prs.onmax.me](https://comark-ui.onmax.me/badge.svg?label=contributions&value=prs.onmax.me&icon=github)](https://prs.onmax.me)
