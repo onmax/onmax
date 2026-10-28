@@ -1,59 +1,88 @@
 # Hi, I'm Maxi 👋
 
-[![Website](https://img.shields.io/badge/onmax.me-000?style=flat&logo=vercel)](https://onmax.me/hire)
-[![PRs](https://img.shields.io/badge/contributions-prs.onmax.me-blue)](https://prs.onmax.me)
+I build apps, open-source libraries, and tools for AI agents.
 
-Digital Crafter. Fullstack dev. Curious builder.
+[![Website: onmax.me](https://comark-ui.onmax.me/badge.svg?label=website&value=onmax.me)](https://onmax.me/hire)
+[![Contributions: prs.onmax.me](https://comark-ui.onmax.me/badge.svg?label=contributions&value=prs.onmax.me&icon=github)](https://prs.onmax.me)
 
-## 🤖 ai & agent tooling
+## 🖍️ Comark UI
 
-- 🧩 **[ViteHub](https://github.com/vite-hub/vitehub)** — Server primitives for Vite, with agent runtime, workspace, scheduling, storage, and search capabilities
-- 🌵 **[Cactus](https://usecactus.app)** — Website blocker for macOS with recurring schedules
-- 🎓 **[Formula 100](https://formula-100.com)** — Learn Spanish through connected dialogues, focused notes, audio, active recall, and speaking
-- 🩺 **[vite-doctor](https://github.com/onmax/vite-doctor)** — Catch AI slop in Vite, Nuxt, and Vue projects
-- 🫳 **[ViteHub Drop](https://github.com/vite-hub/drop)** — Permanent file URLs and temporary rendered code images for agents
-- 🍼 **[ViteHub Babysitter](https://github.com/vite-hub/babysitter)** — Customizable ViteHub template for babysitting pull requests
-- 🧠 **[nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub)** — Teach your AI agent the Nuxt way with best practices and module guidance
-- 🧠 **[nuxt-skills](https://github.com/onmax/nuxt-skills)** — Vue, Nuxt & NuxtHub skills for AI coding assistants
-- 🧰 **[skills](https://github.com/onmax/skills)** — Agent skills from work on ViteHub, Nuxt, auth, validation, Nimiq, and AI coding tools
-- 🤖 **[unagent](https://github.com/onmax/unagent)** — Unified primitives for AI coding agents
+A component library for Markdown. Write tabs, cards, charts, annotated screenshots, and more for docs, reviews, and agent reports.
 
-## 💚 nuxt ecosystem
+[![release](https://comark-ui.onmax.me/badge.svg?source=npm-version&package=comark-ui&label=release&icon=npm)](https://github.com/onmax/comark-ui/releases)
+[![npm downloads](https://comark-ui.onmax.me/badge.svg?source=npm-downloads&package=comark-ui&icon=npm)](https://www.npmjs.com/package/comark-ui)
+[![docs](https://comark-ui.onmax.me/badge.svg?label=docs&value=comark-ui.onmax.me&icon=comark)](https://comark-ui.onmax.me)
 
-- 🔐 **[better-auth](https://github.com/nuxt-modules/better-auth)** — Better Auth integration for Nuxt
-- ✅ **[nuxt-safe-runtime-config](https://github.com/onmax/nuxt-safe-runtime-config)** — Validate runtime config with Standard Schema
-- 📝 **[nuxt-formisch](https://github.com/onmax/nuxt-formisch)** — Schema-based, headless form library
-- 🔄 **[nuxt-convex](https://github.com/onmax/nuxt-convex)** — Nuxt module for Convex
-- 🚀 **[nuxthub-better-auth-starter](https://github.com/onmax/nuxthub-better-auth-starter)** — NuxtHub + Better Auth starter template
-- 🔑 **[better-auth-cross-device](https://github.com/onmax/better-auth-cross-device)** — Better Auth plugin for cross-device flows
+[GitHub](https://github.com/onmax/comark-ui) · [Documentation](https://comark-ui.onmax.me) · [Playground](https://comark-ui.onmax.me/play/)
 
-Also contributing to [nuxt/nuxt](https://github.com/nuxt/nuxt), [nuxt/nuxt.com](https://github.com/nuxt/nuxt.com), [nuxt-hub/core](https://github.com/nuxt-hub/core), [nuxt/ui](https://github.com/nuxt/ui), [nuxt/icon](https://github.com/nuxt/icon), [nuxt-modules/i18n](https://github.com/nuxt-modules/i18n), [Norbiros/nuxt-open-fetch](https://github.com/Norbiros/nuxt-open-fetch), [nuxt/content](https://github.com/nuxt/content), [nuxt/cli](https://github.com/nuxt/cli)
+## 🚀 Apps
 
-## 🔧 js ecosystem
+- 🌵 [Cactus](https://usecactus.app). Website blocker for macOS with recurring schedules.
+- 🎓 [Formula 100](https://formula-100.com). Learn Spanish through connected dialogues, audio, active recall, and speaking.
 
-- 🖍️ **[comark-plugins](https://github.com/onmax/comark-plugins)** — Comark plugins for review documents: annotated screenshots, charts, carousels, tabs, zoom, and lint
-- 🗄️ **[db-compat](https://github.com/onmax/db-compat)** — Database compatibility layer
-- 🛒 **[mathem-cli](https://github.com/onmax/mathem-cli)** — Search Mathem products and prepare a grocery cart from the terminal
-- 🎮 **[phaser-vue](https://github.com/onmax/phaser-vue)** — Phaser experiments in Vue
+## 🤖 AI & developer tools
 
-Also contributing to [vercel/chat](https://github.com/vercel/chat), [vercel/ai](https://github.com/vercel/ai), [h3js/h3](https://github.com/h3js/h3), [unovue/reka-ui](https://github.com/unovue/reka-ui), [vuejs/pinia](https://github.com/vuejs/pinia), [comarkdown/comark](https://github.com/comarkdown/comark)
+- 🧩 [ViteHub](https://github.com/vite-hub/vitehub). Build servers with agent runtimes, workspaces, scheduling, storage, and search.
+- 🩺 [Vite Doctor](https://github.com/onmax/vite-doctor). Catch AI slop in Vite, Nuxt, and Vue projects.
+- 🫳 [Drop](https://github.com/vite-hub/drop). Share files and rendered code images with agents.
+- 🍼 [Babysitter](https://github.com/vite-hub/babysitter). A customizable ViteHub template for babysitting pull requests.
+- 🧰 [skills](https://github.com/onmax/skills). Agent skills for ViteHub, Nuxt, authentication, validation, and AI coding tools.
 
-## ⚡ nimiq
+## 💚 Nuxt
 
-- 🧾 **[nimzaar](https://github.com/onmax/nimzaar)** — Nuxt 4 + NuxtHub mini-app for Nimiq Pay
-- 🎨 **[nimiq-ui](https://github.com/onmax/nimiq-ui)** — UI components for Nimiq
-- 📡 **[albatross-rpc-client-ts](https://github.com/onmax/albatross-rpc-client-ts)** — Fully typed Nimiq RPC client
-- 🤖 **[nimiq-mcp](https://github.com/onmax/nimiq-mcp)** — MCP server for Nimiq blockchain
-- 🚀 **[nimiq-starter](https://github.com/onmax/nimiq-starter)** — Starter templates for Nimiq web client
-- 📋 **[nimiq-changelog](https://github.com/onmax/nimiq-changelog)** — Track changes from Nimiq repos
-- ⭐ **[nimiq-awesome](https://github.com/onmax/nimiq-awesome)** — Curated list of Nimiq projects
+- 🔐 [better-auth](https://github.com/nuxt-modules/better-auth). Better Auth integration for Nuxt.
+- ✅ [nuxt-safe-runtime-config](https://github.com/onmax/nuxt-safe-runtime-config). Validate runtime config with Standard Schema.
+- 📝 [nuxt-formisch](https://github.com/onmax/nuxt-formisch). A schema-based, headless form library.
+- 🔄 [nuxt-convex](https://github.com/onmax/nuxt-convex). Nuxt module for Convex.
 
-Also contributing to [nimiq/developer-center](https://github.com/nimiq/developer-center), [nimiq/crypto-map](https://github.com/nimiq/crypto-map), [nimiq/validators-api](https://github.com/nimiq/validators-api), [nimiq/core-rs-albatross](https://github.com/nimiq/core-rs-albatross)
+## 🧰 More projects
 
-## 🛠️ tools
+<details>
+<summary>Agent tools & skills</summary>
 
-- 🌳 **[wt](https://github.com/onmax/wt)** — Git worktrees CLI with Claude Code support
-- 🌍 **[raycast-deepl](https://github.com/onmax/raycast-deepl)** — Raycast extension for DeepL
-- 📧 **[email-labeller](https://github.com/onmax/email-labeller)** — AI-powered email classification
-- 🥗 **[calories](https://github.com/vite-hub/calories)** — Telegram meal logging with a public read-only ViteHub dashboard
-- 🔀 **[my-pull-requests](https://github.com/vite-hub/my-pull-requests)** — Showcase recent open-source contributions with an RSS feed
+- 🧠 [nuxt-skill-hub](https://github.com/onmax/nuxt-skill-hub). Nuxt best practices and module guidance for AI agents.
+- 🧠 [nuxt-skills](https://github.com/onmax/nuxt-skills). Vue, Nuxt, and NuxtHub skills for AI coding assistants.
+- 🤖 [unagent](https://github.com/onmax/unagent). Unified primitives for AI coding agents.
+
+</details>
+
+<details>
+<summary>Libraries & starters</summary>
+
+- 🚀 [nuxthub-better-auth-starter](https://github.com/onmax/nuxthub-better-auth-starter). NuxtHub and Better Auth starter template.
+- 🔑 [better-auth-cross-device](https://github.com/onmax/better-auth-cross-device). Better Auth plugin for cross-device flows.
+- 🗄️ [db-compat](https://github.com/onmax/db-compat). Database compatibility layer.
+- 🎮 [phaser-vue](https://github.com/onmax/phaser-vue). Phaser experiments in Vue.
+
+</details>
+
+<details>
+<summary>Nimiq</summary>
+
+- 🧾 [nimzaar](https://github.com/onmax/nimzaar). Nuxt 4 and NuxtHub mini-app for Nimiq Pay.
+- 🎨 [nimiq-ui](https://github.com/onmax/nimiq-ui). UI components for Nimiq.
+- 📡 [albatross-rpc-client-ts](https://github.com/onmax/albatross-rpc-client-ts). Fully typed Nimiq RPC client.
+- 🤖 [nimiq-mcp](https://github.com/onmax/nimiq-mcp). MCP server for the Nimiq blockchain.
+- 🚀 [nimiq-starter](https://github.com/onmax/nimiq-starter). Starter templates for the Nimiq web client.
+- 📋 [nimiq-changelog](https://github.com/onmax/nimiq-changelog). Track changes from Nimiq repos.
+- ⭐ [nimiq-awesome](https://github.com/onmax/nimiq-awesome). Curated list of Nimiq projects.
+
+</details>
+
+<details>
+<summary>Utilities & experiments</summary>
+
+- 🌳 [wt](https://github.com/onmax/wt). Git worktrees CLI with Claude Code support.
+- 🛒 [mathem-cli](https://github.com/onmax/mathem-cli). Search Mathem products and prepare a grocery cart from the terminal.
+- 🌍 [raycast-deepl](https://github.com/onmax/raycast-deepl). Raycast extension for DeepL.
+- 📧 [email-labeller](https://github.com/onmax/email-labeller). AI-powered email classification.
+- 🥗 [calories](https://github.com/vite-hub/calories). Telegram meal logging with a public ViteHub dashboard.
+- 🔀 [my-pull-requests](https://github.com/vite-hub/my-pull-requests). Recent open-source contributions with an RSS feed.
+
+</details>
+
+## 🤝 Contributions
+
+I also contribute to [Nuxt](https://github.com/nuxt/nuxt), [Nuxt UI](https://github.com/nuxt/ui), [NuxtHub](https://github.com/nuxt-hub/core), [Comark](https://github.com/comarkdown/comark), [AI SDK](https://github.com/vercel/ai), and [Nimiq](https://github.com/nimiq/core-rs-albatross).
+
+[See my contributions](https://prs.onmax.me)
