@@ -4,6 +4,8 @@ I build apps, open-source libraries, and tools for AI agents.
 
 💼 **Open to work.** Reach me at [hello@onmax.me](mailto:hello@onmax.me).
 
+For custom apps, CMS websites, portals, APIs and automation, [discuss a project on Contra](https://contra.com/max_garcia_lhksnnpj).
+
 [![Website: onmax.me](https://comark-ui.onmax.me/badge.svg?label=website&value=onmax.me)](https://onmax.me/hire)
 [![Contributions: prs.onmax.me](https://comark-ui.onmax.me/badge.svg?label=contributions&value=prs.onmax.me&icon=github)](https://prs.onmax.me)
 
